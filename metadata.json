@@ -1,0 +1,6 @@
+{
+  "name": "Kush & Komal Wedding Invitation",
+  "description": "An elegant, interactive Indian digital wedding invitation for Kush & Komal at Secret Meadows, Patna City, Bihar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

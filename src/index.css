@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-script: 'Alex Brush', 'Great Vibes', cursive;
+    --font-cinzel: 'Cinzel', serif;
+    --font-rozha: 'Rozha One', serif;
+  }
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-rozha {
+  font-family: var(--font-rozha);
+}
+
+/* Luxury Royal Gold Gradient Text */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #fbf5b7 50%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rose-gold-gradient {
+  background: linear-gradient(135deg, #9b1d36 0%, #c83256 50%, #680d22 100%);
+}
+
+.gold-foil-bg {
+  background: linear-gradient(135deg, #f7d070 0%, #d4a017 35%, #fff2a3 70%, #b8860b 100%);
+}
+
+.card-paper-texture {
+  background-color: #faf6f0;
+  background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#d4af37 0.75px, #faf6f0 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.royal-envelope-bg {
+  background: radial-gradient(circle at 50% 30%, #871329 0%, #580c1a 60%, #3d0711 100%);
+}
+
+/* Wax seal 3D effect */
+.wax-seal-shadow {
+  box-shadow: 
+    0 10px 25px -5px rgba(0, 0, 0, 0.5),
+    0 8px 10px -6px rgba(0, 0, 0, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1eae1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cba358;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a67c2e;
+}
